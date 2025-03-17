@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuvette - Job Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gray-50">
+    <nav class="bg-white shadow-md border-b border-gray-200 fixed top-0 w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0">
+                        <img class="h-8 w-auto" src="cuvette-logo.svg" alt="Cuvette">
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <div class="ml-4 flex items-center">
+                        <div class="flex items-center border border-gray-300 rounded-lg py-1 px-3">
+                            <img class="h-8 w-8 rounded-full" src="user.png" alt="Profile">
+                            <span class="ml-2 text-sm font-medium text-gray-700">Bhavik Kela</span>
+                            <svg class="ml-2 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex pt-16">
+        <!-- Sidebar - fixed position -->
+        <aside class="w-64 bg-white border-r border-gray-200 fixed top-16 bottom-0 overflow-y-auto">
+            <nav class="mt-5 px-2">
+                <a href="#"
+                    class="group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-md text-blue-600 bg-gray-100"
+                    id="fulltime-jobs-link">
+                    <svg class="mr-4 h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Fulltime Jobs
+                </a>
+                <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                    id="other-jobs-link">
+                    <svg class="mr-4 h-6 w-6 text-gray-400 group-hover:text-gray-500" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                    </svg>
+                    Other Jobs
+                    <span
+                        class="ml-auto inline-block py-0.5 px-2 text-xs font-medium rounded-full bg-green-100 text-green-800">
+                        New
+                    </span>
+                </a>
+                <a href="#"
+                    class="mt-1 group flex items-center px-2 py-2 text-base leading-6 font-medium rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                    <svg class="mr-4 h-6 w-6 text-gray-400 group-hover:text-gray-500" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    Applied
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main content area - with proper margin to prevent overlap -->
+        <main class="flex-1 ml-64 p-6">
+            <!-- Page Title -->
+            <h1 class="text-2xl font-semibold mb-6">Job Listings</h1>
+            
+            <!-- Two-column layout container -->
+            <div class="flex flex-col lg:flex-row gap-6">
+                <!-- Left column: Search and Job Listings -->
+                <div class="lg:w-3/4">
+                    <!-- Search Form - improved design -->
+                    <div class="sticky top-16 bg-[#F9FAFC] pt-4 pb-3 z-10 border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-5">
+                        <div class="flex items-center gap-2 max-w-3xl">
+                            <div class="relative flex-grow">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <svg class="w-5 h-5 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                    </svg>
+                                </div>
+                                
+                                <input type="text" id="search-input" class="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-3" placeholder="Search jobs by title, company, or keywords...">
+                            </div>
+                            <button id="search-button" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium text-sm transition-colors">
+                                Search
+                            </button>
+                            <button id="clear-search" class="text-gray-700 hover:text-gray-900 border border-gray-300 px-5 py-3 rounded-lg hover:bg-gray-50 font-medium text-sm transition-colors">
+                                Clear
+                            </button>
+                        </div>
+                        
+                        <!-- Results Count - improved typography -->
+                        <div id="results-count" class="text-sm text-gray-600 mt-3 font-medium">
+                            Showing <span class="text-indigo-600 font-semibold">11</span> jobs
+                        </div>
+                        
+                        <!-- Active Filters Display - improved design -->
+                        <div id="active-filters" class="mt-2 flex flex-wrap gap-2 hidden"></div>
+                    </div>
+                    
+                    <!-- Job Listings - improved card design -->
+                    <div id="job-listings" class="space-y-4 mt-2">
+                        <!-- Example job card with improved design -->
+                        <div class="bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-5">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h2 class="text-xl font-bold text-gray-900">HR Executive</h2>
+                                    <p class="text-gray-600 mt-1">Company Name • Location</p>
+                                    <div class="flex gap-2 mt-3">
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">Full-time</span>
+                                        <span class="px-2 py-1 bg-green-100 text-green-800 text-xs font-medium rounded">Remote</span>
+                                    </div>
+                                </div>
+                                <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-medium text-sm transition-colors">
+                                    Apply
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right column: Filters -->
+                <div class="lg:w-1/4">
+                    <!-- Filters Section - improved design -->
+                    <div class="bg-white p-5 border rounded-lg shadow-sm sticky top-20">
+                        <div class="flex items-center justify-between mb-4">
+                            <h2 class="text-lg font-semibold text-gray-900">Filters</h2>
+                            <button id="clear-filters" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">
+                                Clear All
+                            </button>
+                        </div>
+                        
+                        <!-- Job Type Filter -->
+                        <div class="mb-4">
+                            <label for="job-type-filter" class="block text-sm font-medium text-gray-700 mb-1">Job Type</label>
+                            <select id="job-type-filter" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5">
+                                <option value="">All Types</option>
+                                <option value="full-time">Full-time</option>
+                                <option value="part-time">Part-time</option>
+                                <option value="contract">Contract</option>
+                                <option value="internship">Internship</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Location Filter -->
+                        <div class="mb-4">
+                            <label for="location-filter" class="block text-sm font-medium text-gray-700 mb-1">Location</label>
+                            <select id="location-filter" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5">
+                                <option value="">All Locations</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="hyderabad">Hyderabad</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Salary Range Filter -->
+                        <div class="mb-4">
+                            <label for="salary-filter" class="block text-sm font-medium text-gray-700 mb-1">Salary Range</label>
+                            <select id="salary-filter" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5">
+                                <option value="">All Salary Ranges</option>
+                                <option value="0-7.99">Under 8 Lpa</option>
+                                <option value="8-12">8-12 Lpa</option>
+                                <option value="12-15">12-15 Lpa</option>
+                                <option value="15+">15 Lpa +</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Remote Jobs Filter -->
+                        <div class="mb-2">
+                            <label class="inline-flex items-center">
+                                <input type="checkbox" id="remote-filter" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                                <span class="ml-2 text-sm text-gray-700">Remote Jobs Only</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+
+</html>
